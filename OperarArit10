@@ -1,0 +1,24 @@
+using System;
+
+namespace ConversorDolarReal
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Solicita ao usuário que insira a cotação do dólar
+            Console.Write("Digite a cotação do dólar: ");
+            double cotacaoDolar = Convert.ToDouble(Console.ReadLine());
+
+            // Solicita ao usuário que insira a quantidade de dólares
+            Console.Write("Digite a quantidade de dólares: ");
+            double quantidadeDolares = Convert.ToDouble(Console.ReadLine());
+
+            // Calcula o valor em reais
+            double valorEmReais = cotacaoDolar * quantidadeDolares;
+
+            // Exibe o resultado
+            Console.WriteLine("O valor correspondente em Reais é: R$ " + valorEmReais);
+        }
+    }
+}
