@@ -1,0 +1,28 @@
+using System;
+
+namespace ConversorMilhasParaQuilometros
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Definindo a constante para a conversão de milhas marítimas para metros
+            const double MilhaMaritimaParaMetro = 1852;
+            // Definindo a constante para a conversão de metros para quilômetros
+            const double MetroParaQuilometro = 0.001;
+
+            // Solicitando ao usuário a entrada da quantidade de milhas marítimas
+            Console.WriteLine("Digite a quantidade de milhas marítimas:");
+            double milhasMaritimas = Convert.ToDouble(Console.ReadLine());
+
+            // Convertendo as milhas marítimas para quilômetros
+            double quilometros = (milhasMaritimas * MilhaMaritimaParaMetro) * MetroParaQuilometro;
+
+            // Exibindo o resultado da conversão
+            Console.WriteLine($"{milhasMaritimas} milhas marítimas equivalem a {quilometros} quilômetros.");
+
+            // Mantendo a janela do console aberta até que o usuário pressione uma tecla
+            Console.ReadKey();
+        }
+    }
+}
